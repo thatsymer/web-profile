@@ -1,0 +1,260 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.nav__custom {
+  background-color: #0a132f;
+  height: 20vh;
+}
+
+.nav__custom a {
+  font-family: "Roboto Mono", monospace;
+  color: #a8b2d1;
+}
+
+.nav__custom a:hover {
+  color: #00eeff;
+}
+
+.nav__num {
+  font-family: "Roboto Mono", monospace;
+  color: #00eeff;
+}
+
+.nav__close {
+  visibility: hidden;
+  display: none;
+}
+
+.navbar-brand:hover {
+  opacity: 0.5;
+}
+
+.menu__toggle {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.close {
+  right: -100% !important;
+}
+
+.open {
+  right: 0;
+}
+
+.nav__collapse {
+  visibility: hidden;
+  display: none;
+  right: -100%;
+}
+
+.nav__menuico {
+  cursor: pointer;
+  padding: 2rem 1.5rem 4rem;
+  color: #00eeff;
+  height: 1rem;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__collapse {
+    display: block;
+    height: 100%;
+    padding: 6rem;
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    background-color: #233554;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .nav__collapse ul {
+    height: 100%;
+    list-style: none;
+  }
+  .nav__collapse ul a {
+    margin-bottom: 3.5rem;
+    font-family: "Roboto Mono", monospace;
+    color: #a8b2d1;
+  }
+  .nav__collapse ul a:hover {
+    color: #00eeff;
+  }
+  .nav__collapse .nav__close {
+    display: block;
+    visibility: visible;
+    left: 0;
+    top: 0;
+    position: absolute;
+    padding: 2rem 1.5rem 4rem;
+    color: #00eeff;
+    height: 1rem;
+    font-size: 3rem;
+  }
+  .menu__toggle {
+    display: block;
+  }
+}
+
+.hero__container {
+  background-color: #0a132f;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 8rem;
+  height: 80vh;
+}
+
+.hero__container h5 {
+  padding-top: 4rem;
+  color: #00eeff;
+  font-family: "Roboto Mono", monospace;
+}
+
+.hero__container h1 {
+  color: #e6f1ff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 5rem;
+}
+
+.hero__container h2 {
+  color: #a8b2d1;
+  font-family: "Open Sans", sans-serif;
+  font-size: 4rem;
+}
+
+.hero__container p {
+  font-size: 1.3rem;
+  padding-top: 4rem;
+  color: #a8b2d1;
+  font-family: "Inconsolata", monospace;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__container {
+    padding-left: 4rem;
+  }
+  .hero__container h5 {
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .hero__container h1 {
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .hero__container h2 {
+    font-size: 1.5rem;
+  }
+  .hero__container p {
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+.right__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-right: 3rem;
+}
+
+.right__content a {
+  font-family: "Roboto Mono", monospace;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  color: #00eeff;
+  text-decoration: none;
+  padding-left: 1.85rem;
+  padding-bottom: 1rem;
+}
+
+.right__content ul {
+  list-style: none;
+  margin: 0;
+}
+
+.right__content ul::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 150px;
+  margin: 0px auto;
+  background-color: #a8b2d1;
+  margin-top: 1.5rem;
+}
+
+.left__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-left: 1.5rem;
+}
+
+.left__content ul {
+  list-style: none;
+  margin: 0;
+}
+
+.left__content ul::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100px;
+  margin: 0px auto;
+  background-color: #a8b2d1;
+  margin-top: 1.5rem;
+}
+
+.left__content ul li {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.left__content ul li i {
+  color: #a8b2d1;
+}
+
+.left__content ul li i:hover {
+  color: #00eeff;
+}
+
+@media screen and (max-width: 767px) {
+  .left__content {
+    display: none;
+  }
+  .left__content ul {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

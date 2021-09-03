@@ -1,0 +1,96 @@
+.nav__custom {
+  background-color: $bgColor;
+  height: 20vh;
+  a {
+    font-family: $font-title;
+    color: $textSecondary;
+    &:hover {
+      color: $titleColor;
+    }
+  }
+}
+.nav__num {
+  font-family: $font-title;
+  color: $titleColor;
+}
+
+.nav__close {
+  visibility: hidden;
+  display: none;
+}
+
+.navbar-brand:hover {
+  opacity: 0.5;
+}
+
+.menu__toggle {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.close {
+  right: -100% !important;
+}
+
+.open {
+  right: 0;
+}
+
+.nav__collapse {
+  visibility: hidden;
+  display: none;
+  right: -100%;
+}
+
+.nav__menuico {
+  cursor: pointer;
+  padding: 2rem 1.5rem 4rem;
+  color: $titleColor;
+  height: 1rem;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__collapse {
+    display: block;
+    height: 100%;
+    padding: 6rem;
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    background-color: $bgColor2;
+    transition: all 0.5s ease;
+
+    ul {
+      height: 100%;
+      list-style: none;
+
+      a {
+        margin-bottom: 3.5rem;
+        font-family: $font-title;
+        color: $textSecondary;
+
+        &:hover {
+          color: $titleColor;
+        }
+      }
+    }
+
+    .nav__close {
+      display: block;
+      visibility: visible;
+      left: 0;
+      top: 0;
+      position: absolute;
+      padding: 2rem 1.5rem 4rem;
+      color: $titleColor;
+      height: 1rem;
+      font-size: 3rem;
+    }
+  }
+  .menu__toggle {
+    display: block;
+  }
+}
