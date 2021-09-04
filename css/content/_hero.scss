@@ -12,11 +12,12 @@ main {
     padding-top: 3rem;
     color: $titleColor;
     font-family: $font-title;
+    font-size: medium;
   }
   h1 {
     color: $textWhite;
     font-family: $font-body;
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 700;
   }
 
@@ -27,7 +28,7 @@ main {
     font-weight: 700;
   }
   p {
-    font-size: 1.3rem;
+    font-size: medium;
     padding-top: 3rem;
     color: $textSecondary;
     font-family: $font-body2;
@@ -57,4 +58,41 @@ main {
       font-size: 0.8rem;
     }
   }
+}
+// get in touch btn
+
+.hero__btn {
+  a {
+    text-decoration: none;
+    color: $titleColor;
+  }
+  background-color: $bgColor;
+  color: $titleColor;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  width: 100%;
+  border: 1px solid $titleColor;
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 0px;
+  text-shadow: none;
+  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  outline-color: $titleColor;
+  outline-offset: 0px;
+}
+
+.hero__btn:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px $bgColor2, 0 0 20px rgba(255, 255, 255, 0.2);
+  outline-offset: 15px;
+  outline-color: rgba(255, 255, 255, 0);
+  text-shadow: 1px 1px 2px #427388;
 }
