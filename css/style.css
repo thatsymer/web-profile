@@ -69,7 +69,7 @@
   .nav__collapse {
     z-index: 1;
     display: block;
-    width: 50%;
+    width: initial;
     height: 100%;
     padding: 6rem;
     visibility: visible;
