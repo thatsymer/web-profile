@@ -239,6 +239,7 @@ main {
 
 .right__content a {
   font-family: "Roboto Mono", monospace;
+  font-size: 0.9rem;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -257,7 +258,7 @@ main {
   content: "";
   display: block;
   width: 2px;
-  height: 150px;
+  height: 100px;
   margin: 0px auto;
   background-color: #a8b2d1;
   margin-top: 1.5rem;
@@ -297,7 +298,7 @@ main {
 }
 
 .left__content ul li {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
 
