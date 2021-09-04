@@ -1,3 +1,7 @@
+main {
+  background-color: $bgColor;
+}
+
 .hero__container {
   background-color: $bgColor;
   align-items: flex-start;
@@ -13,14 +17,14 @@
     color: $textWhite;
     font-family: $font-body;
     font-size: 4rem;
-    font-weight: bolder;
+    font-weight: 700;
   }
 
   h2 {
     color: $textSecondary;
     font-family: $font-body;
     font-size: 3rem;
-    font-weight: bolder;
+    font-weight: 700;
   }
   p {
     font-size: 1.3rem;
@@ -33,7 +37,7 @@
 @media screen and (max-width: 767px) {
   .hero__container {
     padding-left: 4rem;
-
+    height: auto;
     h5 {
       padding-top: 3rem;
       padding-bottom: 0.5rem;

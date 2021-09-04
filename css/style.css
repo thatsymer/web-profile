@@ -103,6 +103,10 @@
   }
 }
 
+main {
+  background-color: #0a132f;
+}
+
 .hero__container {
   background-color: #0a132f;
   -webkit-box-align: start;
@@ -122,14 +126,14 @@
   color: #e6f1ff;
   font-family: "Open Sans", sans-serif;
   font-size: 4rem;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 .hero__container h2 {
   color: #a8b2d1;
   font-family: "Open Sans", sans-serif;
   font-size: 3rem;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 .hero__container p {
@@ -142,6 +146,7 @@
 @media screen and (max-width: 767px) {
   .hero__container {
     padding-left: 4rem;
+    height: auto;
   }
   .hero__container h5 {
     padding-top: 3rem;
