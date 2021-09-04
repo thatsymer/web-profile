@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
+  background-color: #0a132f;
 }
 
 .nav__custom {
@@ -166,6 +167,11 @@ main {
     padding-bottom: 0.5rem;
     font-size: 0.8rem;
   }
+}
+
+.btn__container {
+  margin-top: 7rem;
+  background-color: #0a132f;
 }
 
 .hero__btn {
