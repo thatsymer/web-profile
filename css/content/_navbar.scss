@@ -21,6 +21,7 @@
 
 .navbar-brand:hover {
   opacity: 0.5;
+  transform: translate3d(0.1em, -0.1em, 0);
 }
 
 .menu__toggle {
