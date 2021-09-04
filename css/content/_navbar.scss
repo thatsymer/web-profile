@@ -55,6 +55,7 @@
 
 @media screen and (max-width: 767px) {
   .nav__collapse {
+    z-index: 1;
     display: block;
     height: 100%;
     padding: 6rem;

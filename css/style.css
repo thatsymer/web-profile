@@ -67,6 +67,7 @@
 
 @media screen and (max-width: 767px) {
   .nav__collapse {
+    z-index: 1;
     display: block;
     height: 100%;
     padding: 6rem;
@@ -186,6 +187,7 @@ main {
   padding-left: 8rem;
   -ms-flex-line-pack: end;
       align-content: flex-end;
+  z-index: -1;
 }
 
 .hero__btn {
