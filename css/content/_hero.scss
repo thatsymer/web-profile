@@ -5,24 +5,26 @@
   height: 80vh;
 
   h5 {
-    padding-top: 4rem;
+    padding-top: 3rem;
     color: $titleColor;
     font-family: $font-title;
   }
   h1 {
     color: $textWhite;
     font-family: $font-body;
-    font-size: 5rem;
+    font-size: 4rem;
+    font-weight: bolder;
   }
 
   h2 {
     color: $textSecondary;
     font-family: $font-body;
-    font-size: 4rem;
+    font-size: 3rem;
+    font-weight: bolder;
   }
   p {
     font-size: 1.3rem;
-    padding-top: 4rem;
+    padding-top: 3rem;
     color: $textSecondary;
     font-family: $font-body2;
   }

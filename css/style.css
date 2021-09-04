@@ -57,7 +57,7 @@
 
 .nav__menuico {
   cursor: pointer;
-  padding: 2rem 1.5rem 4rem;
+  padding: 1rem 1.5rem 4rem;
   color: #00eeff;
   height: 1rem;
   font-size: 3rem;
@@ -113,7 +113,7 @@
 }
 
 .hero__container h5 {
-  padding-top: 4rem;
+  padding-top: 3rem;
   color: #00eeff;
   font-family: "Roboto Mono", monospace;
 }
@@ -121,18 +121,20 @@
 .hero__container h1 {
   color: #e6f1ff;
   font-family: "Open Sans", sans-serif;
-  font-size: 5rem;
+  font-size: 4rem;
+  font-weight: bolder;
 }
 
 .hero__container h2 {
   color: #a8b2d1;
   font-family: "Open Sans", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 
 .hero__container p {
   font-size: 1.3rem;
-  padding-top: 4rem;
+  padding-top: 3rem;
   color: #a8b2d1;
   font-family: "Inconsolata", monospace;
 }
@@ -254,6 +256,9 @@
     display: none;
   }
   .left__content ul {
+    display: none;
+  }
+  .right__content {
     display: none;
   }
 }
