@@ -182,7 +182,7 @@ main {
 }
 
 .btn__container {
-  position: inherit;
+  position: block;
   padding-left: 8rem;
   -ms-flex-line-pack: end;
       align-content: flex-end;
