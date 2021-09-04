@@ -35,8 +35,15 @@ main {
   }
 }
 
+@media screen and (min-width: 767px) {
+  .hero__container {
+    margin-right: 8rem;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .hero__container {
+    margin-right: 4rem;
     padding-left: 4rem;
     height: auto;
     h5 {
