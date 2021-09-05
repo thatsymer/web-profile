@@ -227,6 +227,36 @@ main {
   outline-color: rgba(255, 255, 255, 0);
 }
 
+.about__container {
+  height: 100vh;
+  background-color: #0a132f;
+  padding-left: 8rem;
+  padding-top: 12rem;
+}
+
+.about__container h3 {
+  font-family: "Open Sans", sans-serif;
+  color: #a8b2d1;
+}
+
+.about__container h3::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 300px;
+  background-color: #303c55;
+  position: relative;
+  top: -1rem;
+  margin-left: 13rem;
+}
+
+.about__container h3 span {
+  font-family: "Roboto Mono", monospace;
+  color: #00eeff;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+
 .right__content {
   display: -webkit-box;
   display: -ms-flexbox;

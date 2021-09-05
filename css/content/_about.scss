@@ -1,0 +1,27 @@
+.about__container {
+  height: 100vh;
+  background-color: $bgColor;
+  padding-left: 8rem;
+  padding-top: 12rem;
+
+  h3 {
+    font-family: $font-body;
+    color: $textSecondary;
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 300px;
+      background-color: rgb(48, 60, 85);
+      position: relative;
+      top: -1rem;
+      margin-left: 13rem;
+    }
+    span {
+      font-family: $font-title;
+      color: $titleColor;
+      font-size: 1.5rem;
+      padding-right: 1rem;
+    }
+  }
+}
