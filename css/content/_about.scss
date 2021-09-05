@@ -1,8 +1,10 @@
 .about__container {
+  position: relative;
   height: 100vh;
   background-color: $bgColor;
   padding-left: 8rem;
   padding-top: 12rem;
+  z-index: -1;
 
   h3 {
     font-family: $font-body;
@@ -11,7 +13,7 @@
       content: "";
       display: block;
       height: 1px;
-      width: 300px;
+      width: 16rem;
       background-color: rgb(48, 60, 85);
       position: relative;
       top: -1rem;
@@ -22,6 +24,16 @@
       color: $titleColor;
       font-size: 1.5rem;
       padding-right: 1rem;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__container {
+    padding-left: 4rem;
+    padding-top: 6rem;
+    &::after {
+      width: 8rem;
+      margin-left: 7.5rem;
     }
   }
 }
