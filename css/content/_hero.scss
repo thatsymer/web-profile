@@ -41,12 +41,14 @@ main {
 @media screen and (min-width: 767px) {
   .hero__container {
     padding-right: 8rem;
+    background-color: $bgColor;
   }
 }
 
 @media screen and (max-width: 767px) {
   .btn__container {
     padding-left: 1rem;
+    background-color: $bgColor;
   }
   .hero__container {
     padding-right: 4rem;

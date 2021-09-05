@@ -1,4 +1,4 @@
-.about__container {
+.skills__container {
   display: flex;
   position: block;
   height: 100vh;
@@ -22,7 +22,7 @@
       background-color: rgb(48, 60, 85);
       position: relative;
       top: -1rem;
-      margin-left: 8em;
+      margin-left: 6em;
     }
     span {
       font-family: $font-title;

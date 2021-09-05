@@ -12,13 +12,14 @@
     font-family: $font-title;
     font-size: 0.9rem;
     writing-mode: vertical-rl;
-    color: $titleColor;
+    color: $textSecondary;
     text-decoration: none;
     padding-left: 1.85rem;
     padding-bottom: 1rem;
     &:hover {
       transform: translate3d(0.05em, -0.2em, 0);
       text-shadow: -0.1em 0.1em rgba(0, 204, 255, 0.2);
+      color: $titleColor;
     }
   }
 

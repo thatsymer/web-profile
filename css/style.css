@@ -44,7 +44,7 @@
 }
 
 .close {
-  right: -100% !important;
+  right: -200% !important;
 }
 
 .open {
@@ -54,7 +54,7 @@
 .nav__collapse {
   visibility: hidden;
   display: none;
-  right: -100%;
+  right: -200%;
 }
 
 .nav__menuico {
@@ -156,12 +156,14 @@ main {
 @media screen and (min-width: 767px) {
   .hero__container {
     padding-right: 8rem;
+    background-color: #0a132f;
   }
 }
 
 @media screen and (max-width: 767px) {
   .btn__container {
     padding-left: 1rem;
+    background-color: #0a132f;
   }
   .hero__container {
     padding-right: 4rem;
@@ -228,28 +230,35 @@ main {
 }
 
 .about__container {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: block;
   height: 100vh;
   background-color: #0a132f;
-  padding-left: 8rem;
+  padding-left: 10%;
   padding-top: 12rem;
   z-index: -1;
+  overflow: hidden;
 }
 
 .about__container h3 {
+  display: block;
+  width: 100%;
   font-family: "Open Sans", sans-serif;
   color: #a8b2d1;
+  position: relative;
 }
 
 .about__container h3::after {
   content: "";
   display: block;
   height: 1px;
-  width: 16rem;
+  width: 30%;
   background-color: #303c55;
   position: relative;
   top: -1rem;
-  margin-left: 13rem;
+  margin-left: 8em;
 }
 
 .about__container h3 span {
@@ -260,13 +269,71 @@ main {
 }
 
 @media screen and (max-width: 767px) {
-  .about__container {
-    padding-left: 4rem;
-    padding-top: 6rem;
+  .about__container h3 {
+    font-size: 1rem;
   }
-  .about__container::after {
-    width: 8rem;
-    margin-left: 7.5rem;
+  .about__container h3::after {
+    width: 70%;
+    margin-left: 8rem;
+    top: -0.5rem;
+    margin-right: 20%;
+  }
+  .about__container h3 span {
+    font-size: 0.8rem;
+  }
+}
+
+.project__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: block;
+  height: 100vh;
+  background-color: #0a132f;
+  padding-left: 10%;
+  padding-top: 12rem;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.project__container h3 {
+  display: block;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  color: #a8b2d1;
+  position: relative;
+}
+
+.project__container h3::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 30%;
+  background-color: #303c55;
+  position: relative;
+  top: -1rem;
+  margin-left: 10em;
+}
+
+.project__container h3 span {
+  font-family: "Roboto Mono", monospace;
+  color: #00eeff;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .about__container h3 {
+    font-size: 1rem;
+  }
+  .about__container h3::after {
+    width: 70%;
+    margin-left: 8rem;
+    top: -0.5rem;
+    margin-right: 20%;
+  }
+  .about__container h3 span {
+    font-size: 0.8rem;
   }
 }
 
@@ -293,7 +360,7 @@ main {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
-  color: #00eeff;
+  color: #a8b2d1;
   text-decoration: none;
   padding-left: 1.85rem;
   padding-bottom: 1rem;
@@ -303,6 +370,7 @@ main {
   -webkit-transform: translate3d(0.05em, -0.2em, 0);
           transform: translate3d(0.05em, -0.2em, 0);
   text-shadow: -0.1em 0.1em rgba(0, 204, 255, 0.2);
+  color: #00eeff;
 }
 
 .right__content ul {
@@ -378,6 +446,60 @@ main {
   }
   .right__content {
     display: none;
+  }
+}
+
+.skills__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: block;
+  height: 100vh;
+  background-color: #0a132f;
+  padding-left: 10%;
+  padding-top: 12rem;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.skills__container h3 {
+  display: block;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  color: #a8b2d1;
+  position: relative;
+}
+
+.skills__container h3::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 30%;
+  background-color: #303c55;
+  position: relative;
+  top: -1rem;
+  margin-left: 6em;
+}
+
+.skills__container h3 span {
+  font-family: "Roboto Mono", monospace;
+  color: #00eeff;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .about__container h3 {
+    font-size: 1rem;
+  }
+  .about__container h3::after {
+    width: 70%;
+    margin-left: 8rem;
+    top: -0.5rem;
+    margin-right: 20%;
+  }
+  .about__container h3 span {
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
