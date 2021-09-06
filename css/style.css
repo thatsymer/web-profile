@@ -9,6 +9,7 @@
 .nav__custom {
   background-color: #0a132f;
   height: 20vh;
+  margin: 0;
 }
 
 .nav__custom a {
