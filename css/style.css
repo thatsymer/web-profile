@@ -15,6 +15,7 @@
 .nav__custom a {
   font-family: "Roboto Mono", monospace;
   color: #a8b2d1;
+  font-size: 0.9rem;
 }
 
 .nav__custom a:hover {
@@ -200,6 +201,7 @@ main {
   color: #00eeff;
   cursor: pointer;
   display: block;
+  font-family: "Roboto Mono", monospace;
   font-size: 16px;
   font-weight: 400;
   line-height: 45px;
@@ -208,8 +210,8 @@ main {
   width: 100%;
   border: 1px solid #00eeff;
   border: 0 solid;
-  -webkit-box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-          box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  -webkit-box-shadow: inset 0 0px 20px rgba(255, 255, 255, 0);
+          box-shadow: inset 0 0px 20px rgba(255, 255, 255, 0);
   outline: 1px solid;
   outline-color: rgba(255, 255, 255, 0);
   outline-offset: 0px;
@@ -218,6 +220,7 @@ main {
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
   outline-color: #00eeff;
   outline-offset: 0px;
+  background: transparent;
 }
 
 .hero__btn a {
@@ -226,33 +229,40 @@ main {
 }
 
 .hero__btn:hover {
+  -webkit-box-shadow: 0 0 3px;
+          box-shadow: 0 0 3px;
   border: 1px solid;
   outline-offset: 15px;
   outline-color: rgba(255, 255, 255, 0);
 }
 
-.about__container {
+.about__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: block;
-  height: 100vh;
+  min-height: 100vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #0a132f;
   padding-left: 10%;
-  padding-top: 12rem;
+  padding-top: 8rem;
+  padding-right: 10%;
   z-index: -1;
   overflow: hidden;
 }
 
-.about__container h3 {
+.about__header h3 {
   display: block;
   width: 100%;
   font-family: "Open Sans", sans-serif;
-  color: #a8b2d1;
+  font-weight: 400;
+  color: #e6f1ff;
   position: relative;
 }
 
-.about__container h3::after {
+.about__header h3::after {
   content: "";
   display: block;
   height: 1px;
@@ -260,27 +270,85 @@ main {
   background-color: #303c55;
   position: relative;
   top: -1rem;
-  margin-left: 8em;
+  margin-left: 7em;
 }
 
-.about__container h3 span {
+.about__header h3 span {
   font-family: "Roboto Mono", monospace;
   color: #00eeff;
-  font-size: 1.5rem;
-  padding-right: 1rem;
+  font-size: 1.37rem;
+  padding-right: 0.5rem;
+}
+
+.about__avatar {
+  z-index: 1;
+  position: relative;
+}
+
+.about__avatar img {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 225px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  border-radius: 5px;
+  -o-object-position: center center;
+     object-position: center center;
+  mix-blend-mode: normal;
+  -webkit-transform: translate(-0.6em, -0.6em);
+          transform: translate(-0.6em, -0.6em);
+  -webkit-box-shadow: black 1.95px 1.95px 2.6px;
+          box-shadow: black 1.95px 1.95px 2.6px;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.about__avatar img:hover {
+  -webkit-box-shadow: 0 0 13px #64ffda;
+          box-shadow: 0 0 13px #64ffda;
+}
+
+.img__container {
+  background-color: #00eeff;
+  position: relative;
+  z-index: -1;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.about__content {
+  position: absolute;
+  color: #a8b2d1;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2rem;
+}
+
+.about__content em a {
+  text-decoration: none;
+  color: #00eeff;
+}
+
+.about__content em a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 767px) {
-  .about__container h3 {
+  .about__header h3 {
     font-size: 1rem;
   }
-  .about__container h3::after {
+  .about__header h3::after {
     width: 70%;
     margin-left: 8rem;
     top: -0.5rem;
     margin-right: 20%;
   }
-  .about__container h3 span {
+  .about__header h3 span {
     font-size: 0.8rem;
   }
 }
@@ -314,14 +382,14 @@ main {
   background-color: #303c55;
   position: relative;
   top: -1rem;
-  margin-left: 10em;
+  margin-left: 9em;
 }
 
 .project__container h3 span {
   font-family: "Roboto Mono", monospace;
   color: #00eeff;
-  font-size: 1.5rem;
-  padding-right: 1rem;
+  font-size: 1.37rem;
+  padding-right: 0.5rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -354,9 +422,12 @@ main {
   -ms-flex-align: center;
       align-items: center;
   padding-right: 3rem;
+  z-index: 2;
 }
 
 .right__content a {
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   font-family: "Roboto Mono", monospace;
   font-size: 0.9rem;
   -webkit-writing-mode: vertical-rl;
@@ -429,6 +500,8 @@ main {
 }
 
 .left__content ul li i {
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   color: #a8b2d1;
 }
 
@@ -436,7 +509,7 @@ main {
   color: #00eeff;
   -webkit-transform: translate3d(0.2em, -0.1em, 0);
           transform: translate3d(0.2em, -0.1em, 0);
-  text-shadow: -0.1em 0.1em rgba(0, 204, 255, 0.5);
+  text-shadow: -0.01em 0.1em rgba(0, 204, 255, 0.5);
 }
 
 @media screen and (max-width: 767px) {
@@ -455,7 +528,6 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: block;
   height: 100vh;
   background-color: #0a132f;
   padding-left: 10%;
@@ -480,14 +552,14 @@ main {
   background-color: #303c55;
   position: relative;
   top: -1rem;
-  margin-left: 6em;
+  margin-left: 5em;
 }
 
 .skills__container h3 span {
   font-family: "Roboto Mono", monospace;
   color: #00eeff;
-  font-size: 1.5rem;
-  padding-right: 1rem;
+  font-size: 1.37rem;
+  padding-right: 0.5rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -502,6 +574,66 @@ main {
   }
   .about__container h3 span {
     font-size: 0.8rem;
+  }
+}
+
+#contact {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  background-color: #0a132f;
+  z-index: -1;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.contact__container {
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.contact__container h3 {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  font-family: "Roboto Mono", monospace;
+  color: #00eeff;
+  font-size: 1rem;
+}
+
+.contact__container h1 {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  color: #e6f1ff;
+  font-size: 3rem;
+}
+
+.contact__container p {
+  color: #a8b2d1;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .about__container h3 {
+    font-size: 1rem;
+  }
+  .about__container h3::after {
+    width: 70%;
+    margin-left: 8rem;
+    top: -0.5rem;
+    margin-right: 20%;
   }
 }
 /*# sourceMappingURL=style.css.map */

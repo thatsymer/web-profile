@@ -7,8 +7,10 @@
   -webkit-box-align: center;
   align-items: center;
   padding-right: 3rem;
+  z-index: 2;
 
   a {
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     font-family: $font-title;
     font-size: 0.9rem;
     writing-mode: vertical-rl;
@@ -65,11 +67,12 @@
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
       i {
+        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
         color: $textSecondary;
         &:hover {
           color: $titleColor;
           transform: translate3d(0.2em, -0.1em, 0);
-          text-shadow: -0.1em 0.1em rgba(0, 204, 255, 0.5);
+          text-shadow: -0.01em 0.1em rgba(0, 204, 255, 0.5);
         }
       }
     }

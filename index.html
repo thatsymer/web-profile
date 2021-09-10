@@ -15,6 +15,7 @@
     <!-- Goggle Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&family=Roboto+Mono&display=swap"
       rel="stylesheet"
@@ -54,7 +55,7 @@
         </a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5 me-5">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#about"
                 ><span class="nav__num">00.</span> About</a
@@ -133,33 +134,82 @@
     </div>
     <!-- Main Content -->
     <main>
-      <div class="hero__container">
-        <h5>Hello, my name is</h5>
-        <h1>Symer John Vera.</h1>
-        <h2>I'm an aspiring Web Developer and</h2>
-        <h2>Programmer.</h2>
-        <p>
-          I started my journey as a <span>Web Developer</span> right out of
-          college.
-          <br />
-          Currently spending most of my days polishing my craft to the next
-          level by building personal projects.
-        </p>
-      </div>
-      <div class="me-auto ps-5 ms-md-5 pt-md-3 pb-1 btn__container">
-        <button class="hero__btn ms-4">
-          <a href="mailto:thatsymer@gmail.com">Get in Touch </a>
-        </button>
-      </div>
-      <div class="about__container" id="about">
-        <h3><span>00.</span>About Me</h3>
-      </div>
+      <section>
+        <div class="hero__container">
+          <h5>Hello, my name is</h5>
+          <h1>Symer John Vera.</h1>
+          <h2>I'm an aspiring Web Developer and</h2>
+          <h2>Programmer.</h2>
+          <p>
+            I started my journey as a <span>Web Developer</span> right out of
+            college.
+            <br />
+            Currently spending most of my days polishing my craft to the next
+            level by building personal projects.
+          </p>
+        </div>
+        <div class="me-auto ps-5 ms-md-5 pt-md-3 pb-1 btn__container">
+          <button class="hero__btn ms-4">
+            <a href="mailto:thatsymer@gmail.com">Get in Touch </a>
+          </button>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="about__header">
+          <h3><span>00.</span>About Me</h3>
+          <div class="about__content">
+            <div class="row">
+              <div class="col-md p-5">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Corrupti cumque omnis sed facilis aliquam magni laudantium
+                  incidunt quidem dolore! Cumque veritatis accusantium dolores,
+                  commodi ab neque voluptas omnis minima dicta.
+                </p>
+                <em class="about__qoute">
+                  “What had kept me bound to life thus for had been the shallow
+                  hope that something good might happen someday.”<br />
+                  ―
+                  <a
+                    href="https://www.novelupdates.com/series/three-days-of-happiness/"
+                    target="blank"
+                    >Sugaru Miaki, Three Days of Happiness.</a
+                  >
+                </em>
+              </div>
+
+              <div class="col-md p-5 about__avatar">
+                <div class="img__container"> 
+                  <img
+                    src="/assets/img/avatar.jpg"
+                    class="about__avatar"
+                    alt="avatar"
+                  /> 
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div class="skills__container" id="skills">
         <h3><span>01.</span>Skills</h3>
       </div>
       <div class="project__container" id="projects">
         <h3><span>02.</span>Things i Built</h3>
       </div>
+
+      <section id="contact">
+        <div class="contact__container container">
+          <h3>03.What's next?</h3>
+          <h1 class="mt-4">Get in Touch</h1>
+          <p class="mt-5">I'm currently open and actively looking for any job opportunities.<br> My inbox is always open so feel free to ask me any questions, inquiries, or just drop by and say hi, <br> I'll try my best to respond immediately.</p>
+            
+          <button class="hero__btn mx-auto mt-5">
+              <a href="mailto:thatsymer@gmail.com">Get in Touch </a>
+            </button>
+          
+        </div>
+      </section>
     </main>
     <!-- Footer -->
     <footer></footer>
