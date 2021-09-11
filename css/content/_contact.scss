@@ -41,3 +41,23 @@
     font-size: 1.2rem;
   }
 }
+@media screen and (max-width: 767px) {
+  .btn__container {
+    padding-left: 1rem;
+  }
+  .contact__container {
+    padding-right: 4rem;
+    padding-left: 4rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h5 {
+      font-size: 0.8rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}

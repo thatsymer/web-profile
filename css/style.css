@@ -487,6 +487,10 @@ body {
   text-align: right;
 }
 
+.feature__img {
+  background: url(/assets/img/featuredProgect_1.JPG) no-repeat;
+}
+
 @media screen and (max-width: 767px) {
   .about__container h3 {
     font-size: 1rem;
@@ -669,5 +673,24 @@ body {
   color: #a8b2d1;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .btn__container {
+    padding-left: 1rem;
+  }
+  .contact__container {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  .contact__container h1 {
+    font-size: 2rem;
+  }
+  .contact__container h5 {
+    font-size: 0.8rem;
+  }
+  .contact__container p {
+    font-size: 0.8rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
