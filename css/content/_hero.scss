@@ -1,8 +1,3 @@
-main {
-  background-color: $bgColor;
-  height: 100vh;
-}
-
 .hero__container {
   background-color: $bgColor;
   align-items: flex-start;
@@ -84,6 +79,7 @@ main {
     text-decoration: none;
     color: $titleColor;
   }
+
   background-color: $bgColor;
   color: $titleColor;
   cursor: pointer;
@@ -107,6 +103,7 @@ main {
   outline-color: $titleColor;
   outline-offset: 0px;
   background: transparent;
+  margin-top: 1rem;
 }
 
 .hero__btn:hover {

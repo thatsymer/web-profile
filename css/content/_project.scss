@@ -1,7 +1,6 @@
 .project__container {
   display: flex;
   position: block;
-  height: 100vh;
   background-color: $bgColor;
   padding-left: 10%;
   padding-top: 12rem;
@@ -32,6 +31,52 @@
     }
   }
 }
+
+.featured__project {
+  margin-right: 8rem;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 100px;
+  h5 {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: $font-title;
+    font-size: 0.8rem;
+    color: $titleColor;
+    grid-column: 7 / -1;
+    text-align: right;
+  }
+  a {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: $font-body;
+    font-weight: bolder;
+    font-size: x-large;
+    text-decoration: none;
+    color: $textWhite;
+    grid-column: 7 / -1;
+    text-align: right;
+  }
+}
+
+.feature__description {
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  background-color: rgb(23, 42, 69);
+  color: rgb(168, 178, 209);
+  font-size: 18px;
+  border-radius: 3px;
+  grid-column: 7 / -1;
+  text-align: right;
+}
+
 @media screen and (max-width: 767px) {
   .about__container {
     h3 {

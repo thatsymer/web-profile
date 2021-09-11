@@ -1,16 +1,13 @@
-#contact {
+.contact__container {
   width: 100%;
-  position: relative;
+  display: block;
+  position: absolute;
   height: 100vh;
   background-color: $bgColor;
-  z-index: -1;
+  z-index: 2;
   overflow: hidden;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
-}
-.contact__container {
-  text-align: center;
+  text-align: left;
   padding-top: 8rem;
   h3 {
     display: block;
@@ -20,6 +17,17 @@
     font-family: $font-title;
     color: $titleColor;
     font-size: 1rem;
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 30%;
+      background-color: rgb(48, 60, 85);
+      position: relative;
+      top: -1rem;
+      margin-left: 7em;
+      opacity: 0;
+    }
   }
   h1 {
     width: 100%;
@@ -31,18 +39,5 @@
     color: $textSecondary;
     font-family: $font-body3;
     font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 767px) {
-  .about__container {
-    h3 {
-      font-size: 1rem;
-      &::after {
-        width: 70%;
-        margin-left: 8rem;
-        top: -0.5rem;
-        margin-right: 20%;
-      }
-    }
   }
 }

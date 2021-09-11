@@ -21,9 +21,12 @@
   display: none;
 }
 
-.navbar-brand:hover {
-  opacity: 0.5;
-  transform: translate3d(0.1em, -0.1em, 0);
+.navbar-brand {
+  transition: all 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+  &:hover {
+    transform: rotate3d(1, 0, 1, 360deg);
+  }
 }
 
 .menu__toggle {
