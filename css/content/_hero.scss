@@ -12,18 +12,18 @@
   h1 {
     color: $textWhite;
     font-family: $font-body;
-    font-size: 5rem;
+    font-size: $regular_h1;
     font-weight: 700;
   }
 
   h2 {
     color: $textSecondary;
     font-family: $font-body;
-    font-size: 3rem;
+    font-size: $regular_h2;
     font-weight: 700;
   }
   p {
-    font-size: medium;
+    font-size: $regular_p;
     padding-top: 3rem;
     color: $textSecondary;
     font-family: $font-body2;
@@ -49,22 +49,22 @@
     padding-right: 4rem;
     padding-left: 4rem;
     h5 {
-      padding-top: 3rem;
+      padding-top: 1.5rem;
       padding-bottom: 0.5rem;
-      font-size: 0.8rem;
+      font-size: $mobile_h3;
     }
     h1 {
-      font-size: 2.5rem;
+      font-size: $mobile_h1;
       padding-bottom: 0.5rem;
     }
 
     h2 {
-      font-size: 1.5rem;
+      font-size: $mobile_h2;
     }
     p {
       padding-top: 3rem;
       padding-bottom: 0.5rem;
-      font-size: 0.8rem;
+      font-size: $mobile_p;
     }
   }
 }

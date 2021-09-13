@@ -11,7 +11,7 @@
     display: block;
     width: 100%;
     font-family: $font-body;
-    color: $textSecondary;
+    color: $textWhite;
     position: relative;
     &::after {
       content: "";
@@ -26,7 +26,7 @@
     span {
       font-family: $font-title;
       color: $titleColor;
-      font-size: 1.37rem;
+      font-size: $regular_span;
       padding-right: 0.5rem;
     }
   }
@@ -84,7 +84,7 @@
 @media screen and (max-width: 767px) {
   .about__container {
     h3 {
-      font-size: 1rem;
+      font-size: $mobile_h3;
       &::after {
         width: 70%;
         margin-left: 8rem;
@@ -92,7 +92,7 @@
         margin-right: 20%;
       }
       span {
-        font-size: 0.8rem;
+        font-size: $mobile_span;
       }
     }
   }
