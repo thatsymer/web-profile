@@ -42,7 +42,13 @@
   margin-bottom: 100px;
   height: auto;
   grid-row: 1;
+}
 
+.feature__title {
+  grid-column: 12;
+  text-align: right;
+  margin-bottom: 2rem;
+  position: relative;
   h5 {
     display: block;
     margin-inline-start: 0px;
@@ -64,7 +70,6 @@
     color: $textWhite;
     grid-column: 7 / -1;
     text-align: right;
-    align-self: flex-end;
 
     z-index: 3;
   }
@@ -85,11 +90,14 @@
   text-align: right;
 }
 
+.gridcon {
+  position: relative;
+  grid-area: 1/-1/ 1 / 7;
+}
+
 .feature__img {
-  cursor: pointer;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   position: relative;
-  height: contain;
   margin-top: 2rem;
   margin-left: 7.5rem;
   z-index: 1;
@@ -99,8 +107,8 @@
   background-repeat: no-repeat;
   border: solid 1px $titleColor;
   border-radius: 3px;
-  grid-column: 1/ 9;
-  text-align: right;
+  grid-column: 1/ 7;
+
   a {
     opacity: 0;
     position: absolute;
@@ -108,10 +116,37 @@
     left: 0;
     width: 100%;
     height: 100%;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+    &:hover,
+    &:focus {
+      background: transparent;
+      color: rgb(100, 255, 218);
+      box-shadow: rgb(2 12 27 / 70%) 0p;
+      mix-blend-mode: screen;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      inset: 0px;
+      z-index: 3;
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+      background-color: rgb(10, 25, 47);
+      mix-blend-mode: screen;
+    }
   }
 }
-
 .feature__description,
+.feature__title,
 .feature__img {
   grid-row: 1/2;
 }
