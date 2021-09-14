@@ -81,7 +81,7 @@
     box-shadow: rgba(0, 0, 0, 3px) 1.95px 1.95px 2.6px;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     &:hover {
-      box-shadow: 0 0 13px rgb(100, 255, 218);
+      box-shadow: 0 0 13px rgb(0, 255, 195);
     }
   }
 }
@@ -107,6 +107,7 @@
     a {
       text-decoration: none;
       color: $titleColor;
+
       &:hover {
         text-decoration: underline;
       }
@@ -134,6 +135,15 @@
     em,
     ul {
       font-size: $mobile_p;
+    }
+  }
+
+  .skill__list {
+    li {
+      &::before {
+        line-height: 20px;
+        font-size: 15px;
+      }
     }
   }
 }
