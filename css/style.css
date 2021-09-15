@@ -131,29 +131,29 @@ body {
 }
 
 .hero__container h5 {
-  padding-top: 3rem;
+  padding-top: 2rem;
   color: #00eeff;
   font-family: "Roboto Mono", monospace;
-  font-size: medium;
+  font-size: 1rem;
 }
 
 .hero__container h1 {
   color: #e6f1ff;
   font-family: "Open Sans", sans-serif;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
 }
 
 .hero__container h2 {
   color: #8d909b;
   font-family: "Open Sans", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 .hero__container p {
   font-size: 1rem;
-  padding-top: 3rem;
+  padding-top: 1rem;
   color: #8d909b;
   font-family: "Inconsolata", monospace;
 }
@@ -162,45 +162,12 @@ body {
   color: #00eeff;
 }
 
-@media screen and (min-width: 767px) {
-  .hero__container {
-    padding-right: 8rem;
-    background-color: #0a132f;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .btn__container {
-    padding-left: 1rem;
-    background-color: #0a132f;
-  }
-  .hero__container {
-    padding-right: 4rem;
-    padding-left: 4rem;
-  }
-  .hero__container h5 {
-    padding-top: 1.5rem;
-    padding-bottom: 0.5rem;
-    font-size: 1.1rem;
-  }
-  .hero__container h1 {
-    font-size: 2.5rem;
-    padding-bottom: 0.5rem;
-  }
-  .hero__container h2 {
-    font-size: 1.5rem;
-  }
-  .hero__container p {
-    padding-top: 3rem;
-    padding-bottom: 0.5rem;
-    font-size: 0.8rem;
-  }
-}
-
 .btn__container {
   position: block;
   z-index: -1;
   margin-bottom: 15rem;
+  padding-left: 8rem;
+  padding-top: 2rem;
 }
 
 .hero__btn {
@@ -242,6 +209,47 @@ body {
   border: 1px solid;
   outline-offset: 15px;
   outline-color: rgba(255, 255, 255, 0);
+}
+
+@media screen and (min-width: 767px) {
+  .hero__container {
+    padding-right: 8rem;
+    background-color: #0a132f;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn__container {
+    padding-left: 1rem;
+    background-color: #0a132f;
+  }
+  .hero__btn {
+    width: 100px;
+  }
+  .hero__btn a {
+    font-size: 0.7rem;
+  }
+  .hero__container {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  .hero__container h5 {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.7rem;
+  }
+  .hero__container h1 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+  }
+  .hero__container h2 {
+    font-size: 1rem;
+  }
+  .hero__container p {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
 }
 
 .about__header {
@@ -321,6 +329,12 @@ body {
   z-index: 1;
   position: relative;
   min-width: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .about__avatar img {
@@ -328,7 +342,9 @@ body {
   inset: 0;
   width: 100%;
   height: 100%;
-  max-width: 225px;
+  width: 15rem;
+  min-height: 250px;
+  max-height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 1;
@@ -338,8 +354,8 @@ body {
   mix-blend-mode: normal;
   -webkit-transform: translate(-0.6em, -0.6em);
           transform: translate(-0.6em, -0.6em);
-  -webkit-box-shadow: black 1.95px 1.95px 2.6px;
-          box-shadow: black 1.95px 1.95px 2.6px;
+  -webkit-box-shadow: #1a0004 1.95px 1.95px 2.6px;
+          box-shadow: #1a0004 1.95px 1.95px 2.6px;
   -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
@@ -352,9 +368,10 @@ body {
 .img__container {
   background-color: #00eeff;
   position: relative;
-  max-height: 80%;
   height: 80%;
-  min-height: 50%;
+  width: 15rem;
+  min-height: 250px;
+  max-height: 300px;
   z-index: -1;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -381,8 +398,16 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .about__avatar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .about__header h3 {
-    font-size: 1.1rem;
+    font-size: 0.7rem;
   }
   .about__header h3::after {
     width: 70%;
@@ -432,7 +457,7 @@ body {
   background-color: #303c55;
   position: relative;
   top: -1rem;
-  margin-left: 9em;
+  margin-left: 10em;
 }
 
 .project__container h3 span {
@@ -452,18 +477,21 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
       align-items: center;
-  margin-bottom: 100px;
   height: auto;
   -ms-grid-row: 1;
   grid-row: 1;
+}
+
+.featured__project p {
+  padding: 0.5rem;
 }
 
 .feature__title {
   -ms-grid-column: 12;
   grid-column: 12;
   text-align: right;
-  margin-bottom: 2rem;
   position: relative;
+  margin-top: 4rem;
 }
 
 .feature__title h5 {
@@ -500,10 +528,11 @@ body {
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   position: relative;
   z-index: 2;
-  padding: 25px;
+  margin-top: 1rem;
+  padding: 1rem;
   background-color: #172a45;
   color: #a8b2d1;
-  font-size: 18px;
+  font-size: 1rem;
   border-radius: 3px;
   grid-column: 7 / -1;
   text-align: right;
@@ -512,37 +541,67 @@ body {
   text-align: right;
 }
 
+.feature__description p {
+  margin-bottom: 0;
+  padding: 0;
+}
+
 .gridcon {
   position: relative;
-  grid-area: 1/-1/ -1 / 7;
+  -ms-grid-row: 1;
+  grid-area: 1/ -1/ 1 / 8;
 }
 
 .feature__img {
   -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   position: relative;
-  margin-top: 2rem;
+  margin-top: 5rem;
   margin-left: 7.5rem;
   z-index: 1;
-  padding: 10rem;
   background-image: url(/assets/img/featuredProgect_1.JPG);
   background-size: cover;
   background-repeat: no-repeat;
-  border: solid 1px #00eeff;
+  background-position: right right;
+  background-color: #00eeff;
+  background-blend-mode: darken;
+  width: 100%;
+  height: 100%;
+  border: solid 1px #303c55;
   border-radius: 3px;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 8;
-  grid-column: 1/ 9;
+  -ms-grid-column-span: 7;
+  grid-column: 1/ 8;
 }
 
 .feature__img a {
+  z-index: 2;
+  cursor: pointer;
+  position: absolute;
   opacity: 0;
   position: absolute;
-  top: 0;
-  left: 0;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  height: 100%;
+  width: 100%;
+}
+
+.feature__img a::before {
+  content: "";
+  position: absolute;
   width: 100%;
   height: 100%;
-  cursor: pointer;
+  inset: 0px;
+  z-index: 3;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.feature__img a::before:hover {
+  background-blend-mode: transparent;
 }
 
 .feature__description,
@@ -553,9 +612,74 @@ body {
   grid-row: 1/2;
 }
 
+.feature__list {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0px;
+  margin-right: 2rem;
+  margin: 1rem 0rem 0.8rem;
+  list-style: none;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.feature__list li {
+  font-family: "Roboto Mono", monospace;
+  color: #8d909b;
+  font-size: 0.8rem;
+  text-align: right;
+  white-space: nowrap;
+  margin-right: 20px;
+}
+
+.feature__icons {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0px;
+  margin-right: 2rem;
+  margin: 1rem 0rem 0.8rem;
+  list-style: none;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.feature__icons li {
+  color: #e6f1ff;
+  font-size: 1.5rem;
+  text-align: right;
+  white-space: nowrap;
+  margin-right: 20px;
+}
+
+.feature__icons li i {
+  color: #e6f1ff;
+}
+
+.feature__icons li i:hover {
+  color: #00eeff;
+}
+
 @media screen and (max-width: 767px) {
   .about__container h3 {
-    font-size: 1.1rem;
+    font-size: 0.7rem;
   }
   .about__container h3::after {
     width: 70%;

@@ -21,7 +21,7 @@
       background-color: rgb(48, 60, 85);
       position: relative;
       top: -1rem;
-      margin-left: 9em;
+      margin-left: 10em;
     }
     span {
       font-family: $font-title;
@@ -39,16 +39,18 @@
   grid-template-columns: repeat(12, 1fr);
   -webkit-box-align: center;
   align-items: center;
-  margin-bottom: 100px;
   height: auto;
   grid-row: 1;
+  p {
+    padding: 0.5rem;
+  }
 }
 
 .feature__title {
   grid-column: 12;
   text-align: right;
-  margin-bottom: 2rem;
   position: relative;
+  margin-top: 4rem;
   h5 {
     display: block;
     margin-inline-start: 0px;
@@ -79,58 +81,57 @@
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   position: relative;
   z-index: 2;
-  padding: 25px;
+  margin-top: 1rem;
+  padding: 1rem;
   background-color: rgb(23, 42, 69);
   color: rgb(168, 178, 209);
-  font-size: 18px;
+  font-size: 1rem;
   border-radius: 3px;
   grid-column: 7 / -1;
   text-align: right;
   align-self: flex-end;
   text-align: right;
+  p {
+    margin-bottom: 0;
+    padding: 0;
+  }
 }
 
 .gridcon {
   position: relative;
-  grid-area: 1/-1/ 1 / 7;
+  grid-area: 1/ -1/ 1 / 8;
 }
 
 .feature__img {
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   position: relative;
-  margin-top: 2rem;
+  margin-top: 5rem;
   margin-left: 7.5rem;
   z-index: 1;
-  padding: 10rem;
   background-image: url(/assets/img/featuredProgect_1.JPG);
   background-size: cover;
   background-repeat: no-repeat;
-  border: solid 1px $titleColor;
+  background-position: right right;
+  background-color: $titleColor;
+  background-blend-mode: darken;
+  width: 100%;
+  height: 100%;
+  border: solid 1px rgb(48, 60, 85);
   border-radius: 3px;
-  grid-column: 1/ 7;
+  grid-column: 1/ 8;
 
   a {
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
     opacity: 0;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
     color: inherit;
-    position: relative;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-
-    &:hover,
-    &:focus {
-      background: transparent;
-      color: rgb(100, 255, 218);
-      box-shadow: rgb(2 12 27 / 70%) 0p;
-      mix-blend-mode: screen;
-    }
+    height: 100%;
+    width: 100%;
 
     &::before {
       content: "";
@@ -139,9 +140,10 @@
       height: 100%;
       inset: 0px;
       z-index: 3;
+      &:hover {
+        background-blend-mode: transparent;
+      }
       transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-      background-color: rgb(10, 25, 47);
-      mix-blend-mode: screen;
     }
   }
 }
@@ -149,6 +151,53 @@
 .feature__title,
 .feature__img {
   grid-row: 1/2;
+}
+
+.feature__list {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin-right: 2rem;
+  margin: 1rem 0rem 0.8rem;
+  list-style: none;
+  align-items: flex-end;
+  justify-content: flex-end;
+  li {
+    font-family: $font-title;
+    color: $textSecondary;
+    font-size: 0.8rem;
+    text-align: right;
+    white-space: nowrap;
+    margin-right: 20px;
+  }
+}
+
+.feature__icons {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin-right: 2rem;
+  margin: 1rem 0rem 0.8rem;
+  list-style: none;
+  align-items: flex-end;
+  justify-content: flex-end;
+  li {
+    color: $textWhite;
+    font-size: 1.5rem;
+    text-align: right;
+    white-space: nowrap;
+    margin-right: 20px;
+    i {
+      color: $textWhite;
+      &:hover {
+        color: $titleColor;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {

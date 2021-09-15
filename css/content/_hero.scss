@@ -4,10 +4,10 @@
   padding-left: 8rem;
 
   h5 {
-    padding-top: 3rem;
+    padding-top: 2rem;
     color: $titleColor;
     font-family: $font-title;
-    font-size: medium;
+    font-size: $regular_h5;
   }
   h1 {
     color: $textWhite;
@@ -24,7 +24,7 @@
   }
   p {
     font-size: $regular_p;
-    padding-top: 3rem;
+    padding-top: 1rem;
     color: $textSecondary;
     font-family: $font-body2;
     span {
@@ -32,47 +32,12 @@
     }
   }
 }
-
-@media screen and (min-width: 767px) {
-  .hero__container {
-    padding-right: 8rem;
-    background-color: $bgColor;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .btn__container {
-    padding-left: 1rem;
-    background-color: $bgColor;
-  }
-  .hero__container {
-    padding-right: 4rem;
-    padding-left: 4rem;
-    h5 {
-      padding-top: 1.5rem;
-      padding-bottom: 0.5rem;
-      font-size: $mobile_h3;
-    }
-    h1 {
-      font-size: $mobile_h1;
-      padding-bottom: 0.5rem;
-    }
-
-    h2 {
-      font-size: $mobile_h2;
-    }
-    p {
-      padding-top: 3rem;
-      padding-bottom: 0.5rem;
-      font-size: $mobile_p;
-    }
-  }
-}
-// get in touch btn
 .btn__container {
   position: block;
   z-index: -1;
   margin-bottom: 15rem;
+  padding-left: 8rem;
+  padding-top: 2rem;
 }
 
 .hero__btn {
@@ -112,4 +77,48 @@
   border: 1px solid;
   outline-offset: 15px;
   outline-color: rgba(255, 255, 255, 0);
+}
+
+@media screen and (min-width: 767px) {
+  .hero__container {
+    padding-right: 8rem;
+    background-color: $bgColor;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn__container {
+    padding-left: 1rem;
+    background-color: $bgColor;
+  }
+
+  .hero__btn {
+    width: 100px;
+    a {
+      font-size: $mobile_h3;
+    }
+  }
+
+  .hero__container {
+    padding-right: 4rem;
+    padding-left: 4rem;
+    h5 {
+      padding-top: 1rem;
+      padding-bottom: 0.5rem;
+      font-size: $mobile_h3;
+    }
+    h1 {
+      font-size: $mobile_h1;
+      padding-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: $mobile_h2;
+    }
+    p {
+      padding-top: 1rem;
+      padding-bottom: 0.5rem;
+      font-size: $mobile_p;
+    }
+  }
 }
