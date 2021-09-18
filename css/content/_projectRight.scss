@@ -112,11 +112,11 @@
   position: relative;
   margin-top: 4rem;
   z-index: 1;
-  border: solid 1px rgb(48, 60, 85);
+  border: solid 1.5px rgb(48, 60, 85);
   border-radius: 3px;
   grid-column: 1/9;
   background-image: url(/assets/img/featuredProgect_1.JPG);
-  background-size: 100% 100%;
+  background-size: 101% 101%;
   background-repeat: no-repeat;
   background-position: right right;
   background-color: $titleColor;
@@ -124,9 +124,6 @@
   width: 100%;
   height: 85%;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 1s;
-  &:hover {
-    background-image: url(/assets/img/featuredProgect_1.JPG);
-  }
 }
 
 .feature__description,

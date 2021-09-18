@@ -37,7 +37,7 @@
   z-index: -1;
   margin-bottom: 15rem;
   padding-left: 8rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .hero__btn {
@@ -120,5 +120,11 @@
       padding-bottom: 0.5rem;
       font-size: $mobile_p;
     }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .btn__container {
+    margin-left: 3.1rem;
   }
 }

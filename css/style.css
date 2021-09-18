@@ -21,7 +21,7 @@ body {
 
 .nav__custom a {
   font-family: "Roboto Mono", monospace;
-  color: #8d909b;
+  color: #9b9faa;
   font-size: 0.9rem;
 }
 
@@ -100,7 +100,7 @@ body {
   .nav__collapse ul a {
     margin-bottom: 3.5rem;
     font-family: "Roboto Mono", monospace;
-    color: #8d909b;
+    color: #9b9faa;
   }
   .nav__collapse ul a:hover {
     color: #00eeff;
@@ -134,18 +134,18 @@ body {
   padding-top: 2rem;
   color: #00eeff;
   font-family: "Roboto Mono", monospace;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .hero__container h1 {
-  color: #e6f1ff;
+  color: #bfc8d4;
   font-family: "Open Sans", sans-serif;
   font-size: 4rem;
   font-weight: 700;
 }
 
 .hero__container h2 {
-  color: #8d909b;
+  color: #9b9faa;
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   font-weight: 700;
@@ -154,7 +154,7 @@ body {
 .hero__container p {
   font-size: 1rem;
   padding-top: 1rem;
-  color: #8d909b;
+  color: #9b9faa;
   font-family: "Inconsolata", monospace;
 }
 
@@ -167,7 +167,7 @@ body {
   z-index: -1;
   margin-bottom: 15rem;
   padding-left: 8rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .hero__btn {
@@ -252,6 +252,12 @@ body {
   }
 }
 
+@media screen and (max-width: 750px) {
+  .btn__container {
+    margin-left: 3.1rem;
+  }
+}
+
 .about__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -276,7 +282,7 @@ body {
   width: 100%;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: #e6f1ff;
+  color: #bfc8d4;
   position: relative;
 }
 
@@ -383,7 +389,7 @@ body {
 
 .about__content {
   position: absolute;
-  color: #8d909b;
+  color: #9b9faa;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.2rem;
 }
@@ -447,7 +453,7 @@ body {
   display: block;
   width: 100%;
   font-family: "Open Sans", sans-serif;
-  color: #e6f1ff;
+  color: #bfc8d4;
   position: relative;
 }
 
@@ -520,7 +526,7 @@ body {
   font-weight: bolder;
   font-size: x-large;
   text-decoration: none;
-  color: #e6f1ff;
+  color: #bfc8d4;
   grid-column: 7 / -1;
   text-align: right;
   z-index: 3;
@@ -561,13 +567,13 @@ body {
   position: relative;
   margin-top: 4rem;
   z-index: 1;
-  border: solid 1px #303c55;
+  border: solid 1.5px #303c55;
   border-radius: 3px;
   -ms-grid-column: 1;
   -ms-grid-column-span: 8;
   grid-column: 1/9;
   background-image: url(/assets/img/featuredProgect_1.JPG);
-  background-size: 100% 100%;
+  background-size: 101% 101%;
   background-repeat: no-repeat;
   background-position: right right;
   background-color: #00eeff;
@@ -576,10 +582,6 @@ body {
   height: 85%;
   -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 1s;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 1s;
-}
-
-.feature__img:hover {
-  background-image: url(/assets/img/featuredProgect_1.JPG);
 }
 
 .feature__description,
@@ -612,7 +614,7 @@ body {
 
 .feature__list li {
   font-family: "Roboto Mono", monospace;
-  color: #8d909b;
+  color: #9b9faa;
   font-size: 0.8rem;
   text-align: right;
   white-space: nowrap;
@@ -640,7 +642,7 @@ body {
 }
 
 .feature__icons li {
-  color: #e6f1ff;
+  color: #bfc8d4;
   font-size: 1.5rem;
   text-align: right;
   white-space: nowrap;
@@ -648,7 +650,7 @@ body {
 }
 
 .feature__icons li i {
-  color: #e6f1ff;
+  color: #bfc8d4;
 }
 
 .feature__icons li i:hover {
@@ -673,6 +675,7 @@ body {
 .featured__projectLeft {
   padding-left: 0;
   margin-right: 8rem;
+  margin-top: 8rem;
   display: -ms-grid;
   display: grid;
   gap: 10px;
@@ -721,7 +724,7 @@ body {
   font-weight: bolder;
   font-size: x-large;
   text-decoration: none;
-  color: #e6f1ff;
+  color: #bfc8d4;
   grid-column: 7 / -1;
   text-align: left;
   z-index: 3;
@@ -742,7 +745,7 @@ body {
   text-align: left;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  text-align: right;
+  text-align: left;
 }
 
 .feature__descriptionLeft p {
@@ -763,11 +766,11 @@ body {
   position: relative;
   margin-top: 4rem;
   z-index: 1;
-  border: solid 1px #303c55;
+  border: solid 1.5px #303c55;
   border-radius: 3px;
   grid-column: -1/6;
   background-image: url(/assets/img/featuredProgect_1.JPG);
-  background-size: 100% 100%;
+  background-size: 101% 101%;
   background-repeat: no-repeat;
   background-position: right right;
   background-color: #00eeff;
@@ -776,10 +779,6 @@ body {
   height: 85%;
   -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 1s;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 1s;
-}
-
-.feature__imgLeft:hover {
-  background-image: url(/assets/img/featuredProgect_1.JPG);
 }
 
 .feature__descriptionLeft,
@@ -812,7 +811,7 @@ body {
 
 .feature__listLeft li {
   font-family: "Roboto Mono", monospace;
-  color: #8d909b;
+  color: #9b9faa;
   font-size: 0.8rem;
   text-align: right;
   white-space: nowrap;
@@ -840,7 +839,7 @@ body {
 }
 
 .feature__iconsLeft li {
-  color: #e6f1ff;
+  color: #bfc8d4;
   font-size: 1.5rem;
   text-align: right;
   white-space: nowrap;
@@ -848,7 +847,7 @@ body {
 }
 
 .feature__iconsLeft li i {
-  color: #e6f1ff;
+  color: #bfc8d4;
 }
 
 .feature__iconsLeft li i:hover {
@@ -896,7 +895,7 @@ body {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
-  color: #8d909b;
+  color: #9b9faa;
   text-decoration: none;
   padding-left: 1.85rem;
   padding-bottom: 1rem;
@@ -965,7 +964,7 @@ body {
 .left__content ul li i {
   -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-  color: #8d909b;
+  color: #9b9faa;
 }
 
 .left__content ul li i:hover {
@@ -984,6 +983,124 @@ body {
   }
   .right__content {
     display: none;
+  }
+}
+
+#other-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 8rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 8rem;
+}
+
+#other-projects h2 {
+  font-size: 2rem;
+  color: #bfc8d4;
+  font-family: "Open Sans", sans-serif;
+}
+
+#other-projects ul {
+  list-style: none;
+}
+
+.project__grid {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  gap: 15px;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.list__otherProjects {
+  background-color: #233554;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.list__otherProjects {
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.list__otherProjects:hover {
+  -webkit-transform: translate3d(0.05em, -0.2em, 0);
+          transform: translate3d(0.05em, -0.2em, 0);
+}
+
+.project__grid,
+#other-projects {
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+footer {
+  color: #708090;
+  font-family: "Inconsolata", monospace;
+  font-size: 1rem;
+}
+
+.project__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project__title {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #bfc8d4;
+}
+
+.project__title::after {
+  visibility: hidden;
+}
+
+.project__title:hover {
+  color: #00eeff;
+}
+
+.project__folder {
+  font-size: 2.7rem;
+  color: #00eeff;
+}
+
+.project__external a {
+  color: #9b9faa;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+}
+
+.project__description p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .project__grid,
+  #other-projects {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  #other-projects {
+    margin-right: 4rem;
   }
 }
 
@@ -1029,12 +1146,12 @@ body {
 .contact__container h1 {
   width: 100%;
   font-family: "Open Sans", sans-serif;
-  color: #e6f1ff;
+  color: #bfc8d4;
   font-size: 3rem;
 }
 
 .contact__container p {
-  color: #8d909b;
+  color: #9b9faa;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.2rem;
 }
