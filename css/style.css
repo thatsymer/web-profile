@@ -131,7 +131,7 @@ body {
 }
 
 .hero__container h5 {
-  padding-top: 2rem;
+  padding-top: 1rem;
   color: #00eeff;
   font-family: "Roboto Mono", monospace;
   font-size: 1rem;
@@ -438,7 +438,6 @@ body {
 .project__container {
   position: block;
   background-color: #0a132f;
-  padding-left: 10%;
   padding-top: 8rem;
   margin-top: 8rem;
   z-index: -1;
@@ -769,7 +768,7 @@ body {
   border: solid 1.5px #303c55;
   border-radius: 3px;
   grid-column: -1/6;
-  background-image: url(/assets/img/featuredProgect_1.JPG);
+  background-image: url(/assets/img/todo.jpeg);
   background-size: 101% 101%;
   background-repeat: no-repeat;
   background-position: right right;
@@ -1027,11 +1026,17 @@ body {
   background-color: #233554;
   padding: 1rem;
   border-radius: 5px;
-}
-
-.list__otherProjects {
   -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  cursor: pointer;
+}
+
+.list__otherProjects a {
+  text-decoration: none;
+}
+
+.list__otherProjects a p {
+  color: #9b9faa;
 }
 
 .list__otherProjects:hover {
@@ -1088,9 +1093,23 @@ footer {
   text-decoration-skip-ink: auto;
 }
 
+.project__external a:hover {
+  color: #00eeff;
+}
+
 .project__description p {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
+}
+
+.project__gitLink a {
+  color: #9b9faa;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+}
+
+.project__gitLink a:hover {
+  color: #00eeff;
 }
 
 @media screen and (max-width: 767px) {

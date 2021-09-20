@@ -28,10 +28,14 @@
   background-color: $bgColor2;
   padding: 1rem;
   border-radius: 5px;
-}
-
-.list__otherProjects {
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    p {
+      color: $textSecondary;
+    }
+  }
   &:hover {
     transform: translate3d(0.05em, -0.2em, 0);
   }
@@ -75,6 +79,9 @@ footer {
     color: $textSecondary;
     text-decoration: none;
     text-decoration-skip-ink: auto;
+    &:hover {
+      color: $titleColor;
+    }
   }
 }
 
@@ -84,7 +91,16 @@ footer {
     font-size: 1rem;
   }
 }
-
+.project__gitLink {
+  a {
+    color: $textSecondary;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    &:hover {
+      color: $titleColor;
+    }
+  }
+}
 @media screen and (max-width: 767px) {
   .project__grid,
   #other-projects {
