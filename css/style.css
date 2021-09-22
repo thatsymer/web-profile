@@ -138,7 +138,7 @@ body {
 }
 
 .hero__container h1 {
-  color: #bfc8d4;
+  color: #eff2f5;
   font-family: "Open Sans", sans-serif;
   font-size: 4rem;
   font-weight: 700;
@@ -282,7 +282,7 @@ body {
   width: 100%;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: #bfc8d4;
+  color: #eff2f5;
   position: relative;
 }
 
@@ -391,7 +391,7 @@ body {
   position: absolute;
   color: #9b9faa;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .about__content em a {
@@ -452,7 +452,7 @@ body {
   display: block;
   width: 100%;
   font-family: "Open Sans", sans-serif;
-  color: #bfc8d4;
+  color: #eff2f5;
   position: relative;
 }
 
@@ -525,7 +525,7 @@ body {
   font-weight: bolder;
   font-size: x-large;
   text-decoration: none;
-  color: #bfc8d4;
+  color: #eff2f5;
   grid-column: 7 / -1;
   text-align: right;
   z-index: 3;
@@ -557,7 +557,7 @@ body {
 .gridcon {
   position: relative;
   -ms-grid-row: 1;
-  grid-area: 1/ -1/ 1 / 8;
+  grid-area: 1/ -1/ 1 / 7;
 }
 
 .feature__img {
@@ -641,7 +641,7 @@ body {
 }
 
 .feature__icons li {
-  color: #bfc8d4;
+  color: #eff2f5;
   font-size: 1.5rem;
   text-align: right;
   white-space: nowrap;
@@ -649,7 +649,7 @@ body {
 }
 
 .feature__icons li i {
-  color: #bfc8d4;
+  color: #eff2f5;
 }
 
 .feature__icons li i:hover {
@@ -668,6 +668,12 @@ body {
   }
   .project__container h3 span {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .featured__project {
+    visibility: hidden;
   }
 }
 
@@ -723,7 +729,7 @@ body {
   font-weight: bolder;
   font-size: x-large;
   text-decoration: none;
-  color: #bfc8d4;
+  color: #eff2f5;
   grid-column: 7 / -1;
   text-align: left;
   z-index: 3;
@@ -838,7 +844,7 @@ body {
 }
 
 .feature__iconsLeft li {
-  color: #bfc8d4;
+  color: #eff2f5;
   font-size: 1.5rem;
   text-align: right;
   white-space: nowrap;
@@ -846,7 +852,7 @@ body {
 }
 
 .feature__iconsLeft li i {
-  color: #bfc8d4;
+  color: #eff2f5;
 }
 
 .feature__iconsLeft li i:hover {
@@ -865,6 +871,12 @@ body {
   }
   .project__containerLeft h3 span {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .featured__project {
+    visibility: hidden;
   }
 }
 
@@ -1005,12 +1017,16 @@ body {
 
 #other-projects h2 {
   font-size: 2rem;
-  color: #bfc8d4;
+  color: #eff2f5;
   font-family: "Open Sans", sans-serif;
 }
 
 #other-projects ul {
   list-style: none;
+}
+
+#other-projects footer {
+  font-size: 0.8rem;
 }
 
 .project__grid {
@@ -1023,6 +1039,7 @@ body {
 }
 
 .list__otherProjects {
+  position: relative;
   background-color: #233554;
   padding: 1rem;
   border-radius: 5px;
@@ -1051,9 +1068,15 @@ body {
 }
 
 footer {
+  margin-top: 0;
   color: #708090;
-  font-family: "Inconsolata", monospace;
   font-size: 1rem;
+  vertical-align: bottom;
+  font-family: "Inconsolata", monospace;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1rem;
 }
 
 .project__top {
@@ -1071,7 +1094,7 @@ footer {
 .project__title {
   margin-top: 1rem;
   font-size: 1.2rem;
-  color: #bfc8d4;
+  color: #eff2f5;
 }
 
 .project__title::after {
@@ -1087,7 +1110,19 @@ footer {
   color: #00eeff;
 }
 
+.project__external {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  font-size: 1.5rem;
+}
+
 .project__external a {
+  margin-right: 1rem;
   color: #9b9faa;
   text-decoration: none;
   text-decoration-skip-ink: auto;
@@ -1100,16 +1135,7 @@ footer {
 .project__description p {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
-}
-
-.project__gitLink a {
-  color: #9b9faa;
-  text-decoration: none;
-  text-decoration-skip-ink: auto;
-}
-
-.project__gitLink a:hover {
-  color: #00eeff;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -1165,7 +1191,7 @@ footer {
 .contact__container h1 {
   width: 100%;
   font-family: "Open Sans", sans-serif;
-  color: #bfc8d4;
+  color: #eff2f5;
   font-size: 3rem;
 }
 
@@ -1182,14 +1208,12 @@ footer {
   .contact__container {
     padding-right: 4rem;
     padding-left: 4rem;
+    font-family: "Inconsolata", monospace;
   }
   .contact__container h1 {
     font-size: 2rem;
   }
   .contact__container h5 {
-    font-size: 0.8rem;
-  }
-  .contact__container p {
     font-size: 0.8rem;
   }
 }

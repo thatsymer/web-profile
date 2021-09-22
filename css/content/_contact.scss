@@ -48,15 +48,12 @@
   .contact__container {
     padding-right: 4rem;
     padding-left: 4rem;
-
+    font-family: $font-body2;
     h1 {
       font-size: 2rem;
     }
 
     h5 {
-      font-size: 0.8rem;
-    }
-    p {
       font-size: 0.8rem;
     }
   }

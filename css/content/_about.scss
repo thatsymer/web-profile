@@ -107,7 +107,8 @@
   position: absolute;
   color: $textSecondary;
   font-family: $font-body3;
-  font-size: 1.2rem;
+  font-size: $regular_p;
+
   em {
     a {
       text-decoration: none;
