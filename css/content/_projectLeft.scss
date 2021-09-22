@@ -158,10 +158,54 @@
       }
     }
   }
-}
 
-@media screen and (max-width: 576px) {
-  .featured__project {
-    visibility: hidden;
+  .featured__projectLeft {
+    margin-right: 2.5rem;
+  }
+
+  .feature__titleLeft {
+    padding-top: 4rem;
+    padding-left: 2rem;
+    h5,
+    a {
+      text-align: left;
+    }
+  }
+
+  .feature__descriptionLeft {
+    p {
+      text-align: left;
+    }
+  }
+
+  .feature__listLeft,
+  .feature__iconsLeft {
+    padding-left: 2rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .feature__iconsLeft {
+    padding-bottom: 2rem;
+  }
+  .gridcon__left {
+    position: relative;
+    grid-area: 1/ 1/ 1 / 9;
+  }
+
+  .feature__imgLeft {
+    grid-column: 1/12;
+    opacity: 0.4;
+    background-color: $textSlate;
+    background-blend-mode: overlay;
+    opacity: 0.1;
+    box-shadow: rgba(0, 225, 255, 0.4) 5px 5px, rgba(0, 225, 255, 0.3) 10px 10px,
+      rgba(0, 225, 250, 0.2) 15px 15px, rgba(0, 225, 250, 0.1) 20px 20px,
+      rgba(0, 225, 250, 0.05) 25px 25px;
+  }
+
+  .feature__descriptionLeft {
+    padding-left: 2rem;
+    background-color: transparent;
   }
 }

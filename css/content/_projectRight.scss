@@ -56,6 +56,7 @@
   text-align: right;
   position: relative;
   margin-top: 4rem;
+  z-index: 2;
   h5 {
     display: block;
     margin-inline-start: 0px;
@@ -180,7 +181,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .project__container {
     h3 {
       font-size: $mobile_h3;
@@ -195,10 +196,53 @@
       }
     }
   }
-}
 
-@media screen and (max-width: 576px) {
   .featured__project {
-    visibility: hidden;
+    margin-right: 2.5rem;
+  }
+
+  .feature__title {
+    padding-top: 4rem;
+    padding-left: 2rem;
+    h5,
+    a {
+      text-align: left;
+    }
+  }
+
+  .feature__description {
+    p {
+      text-align: left;
+    }
+  }
+
+  .feature__list,
+  .feature__icons {
+    padding-left: 2rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .feature__icons {
+    padding-bottom: 2rem;
+  }
+  .gridcon {
+    position: relative;
+    grid-area: 1/ 1/ 1 / 9;
+  }
+
+  .feature__img {
+    grid-column: 1/12;
+    opacity: 0.15;
+    background-color: $textSlate;
+    background-blend-mode: overlay;
+    box-shadow: rgba(0, 225, 255, 0.4) 5px 5px, rgba(0, 225, 255, 0.3) 10px 10px,
+      rgba(0, 225, 250, 0.2) 15px 15px, rgba(0, 225, 250, 0.1) 20px 20px,
+      rgba(0, 225, 250, 0.05) 25px 25px;
+  }
+
+  .feature__description {
+    padding-left: 2rem;
+    background-color: transparent;
   }
 }
