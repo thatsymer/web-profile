@@ -186,8 +186,8 @@
     h3 {
       font-size: $mobile_h3;
       &::after {
-        width: 70%;
-        margin-left: 8rem;
+        width: 35%;
+        margin-left: 15rem;
         top: -0.5rem;
         margin-right: 20%;
       }
@@ -198,7 +198,7 @@
   }
 
   .featured__project {
-    margin-right: 2.5rem;
+    margin-right: 2rem;
   }
 
   .feature__title {

@@ -144,23 +144,8 @@
 }
 
 @media screen and (max-width: 767px) {
-  .project__containerLeft {
-    h3 {
-      font-size: $mobile_h3;
-      &::after {
-        width: 70%;
-        margin-left: 8rem;
-        top: -0.5rem;
-        margin-right: 20%;
-      }
-      span {
-        font-size: $mobile_span;
-      }
-    }
-  }
-
   .featured__projectLeft {
-    margin-right: 2.5rem;
+    margin-right: 2rem;
   }
 
   .feature__titleLeft {

@@ -45,15 +45,20 @@
   .btn__container {
     padding-left: 1rem;
   }
+
   .contact__container {
+    margin-top: 10rem;
     padding-right: 4rem;
     padding-left: 4rem;
     font-family: $font-body2;
+    text-align: center;
     h1 {
+      padding-top: 1rem;
       font-size: 2rem;
     }
 
     h5 {
+      padding-top: 1rem;
       font-size: 0.8rem;
     }
   }

@@ -217,10 +217,10 @@ body {
   }
   .hero__btn {
     margin-top: 1rem;
-    width: 100px;
+    width: 200px;
   }
   .hero__btn a {
-    font-size: 0.7rem;
+    font-size: 1.1rem;
   }
   .hero__container {
     padding-right: 2rem;
@@ -229,7 +229,7 @@ body {
   .hero__container h5 {
     padding-top: 2rem;
     padding-bottom: 0.5rem;
-    font-size: 0.7rem;
+    font-size: 1.1rem;
   }
   .hero__container h1 {
     padding-bottom: 0.5rem;
@@ -240,7 +240,7 @@ body {
   .hero__container p {
     padding-top: 1rem;
     margin-bottom: 0;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
@@ -399,7 +399,7 @@ body {
             justify-content: center;
   }
   .about__header h3 {
-    font-size: 0.7rem;
+    font-size: 1.1rem;
   }
   .about__header h3::after {
     width: 70%;
@@ -408,12 +408,12 @@ body {
     margin-right: 20%;
   }
   .about__header h3 span {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .about__content p,
   .about__content em,
   .about__content ul {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .skill__list li::before {
     line-height: 20px;
@@ -645,19 +645,19 @@ body {
 
 @media screen and (max-width: 768px) {
   .project__container h3 {
-    font-size: 0.7rem;
+    font-size: 1.1rem;
   }
   .project__container h3::after {
-    width: 70%;
-    margin-left: 8rem;
+    width: 35%;
+    margin-left: 15rem;
     top: -0.5rem;
     margin-right: 20%;
   }
   .project__container h3 span {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .featured__project {
-    margin-right: 2.5rem;
+    margin-right: 2rem;
   }
   .feature__title {
     padding-top: 4rem;
@@ -889,20 +889,8 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .project__containerLeft h3 {
-    font-size: 0.7rem;
-  }
-  .project__containerLeft h3::after {
-    width: 70%;
-    margin-left: 8rem;
-    top: -0.5rem;
-    margin-right: 20%;
-  }
-  .project__containerLeft h3 span {
-    font-size: 0.9rem;
-  }
   .featured__projectLeft {
-    margin-right: 2.5rem;
+    margin-right: 2rem;
   }
   .feature__titleLeft {
     padding-top: 4rem;
@@ -1278,14 +1266,18 @@ footer {
     padding-left: 1rem;
   }
   .contact__container {
+    margin-top: 10rem;
     padding-right: 4rem;
     padding-left: 4rem;
     font-family: "Inconsolata", monospace;
+    text-align: center;
   }
   .contact__container h1 {
+    padding-top: 1rem;
     font-size: 2rem;
   }
   .contact__container h5 {
+    padding-top: 1rem;
     font-size: 0.8rem;
   }
 }
