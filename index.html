@@ -347,10 +347,10 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
   <!-- GSAP3 Animations -->
   <script>
-    gsap.from('.anim1', {opacity:0, duration:0.5, y:-50,x:-50, stagger:0.2});
-    gsap.from('.anim2', {opacity:0, duration:0.5, delay:1, y:50, stagger:0.2});
-    gsap.from('.anim3', {opacity:0, duration:0.5, delay:2, x:100,});
-    gsap.from('.anim4', {opacity:0, duration:0.5, delay:2.5, x:-100,});
+    gsap.from('.anim1', {opacity:0, duration:0.5, y:-50,x:-50, stagger:0.2,ease: "power4.out",});
+    gsap.from('.anim2', {opacity:0, duration:0.5, delay:.5, y:50, stagger:0.2});
+    gsap.from('.anim3', {opacity:0, duration:0.5, delay:1.5, x:100,});
+    gsap.from('.anim4', {opacity:0, duration:0.5, delay:1.75, x:-100,});
   </script>
   </body>
 </html>
