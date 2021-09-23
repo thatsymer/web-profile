@@ -12,7 +12,7 @@
   h1 {
     color: $textWhite;
     font-family: $font-body;
-    font-size: $regular_h1;
+    font-size: clamp(40px, 8vw, 70px);
     font-weight: 700;
   }
 
@@ -90,9 +90,11 @@
   .btn__container {
     padding-left: 1rem;
     background-color: $bgColor;
+    margin-bottom: 10rem;
   }
 
   .hero__btn {
+    margin-top: 1rem;
     width: 100px;
     a {
       font-size: $mobile_h3;
@@ -103,12 +105,11 @@
     padding-right: 4rem;
     padding-left: 4rem;
     h5 {
-      padding-top: 1rem;
+      padding-top: 2rem;
       padding-bottom: 0.5rem;
       font-size: $mobile_h3;
     }
     h1 {
-      font-size: $mobile_h1;
       padding-bottom: 0.5rem;
     }
 
@@ -117,7 +118,7 @@
     }
     p {
       padding-top: 1rem;
-      padding-bottom: 0.5rem;
+      margin-bottom: 0;
       font-size: $mobile_p;
     }
   }

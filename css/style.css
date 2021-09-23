@@ -140,7 +140,7 @@ body {
 .hero__container h1 {
   color: #eff2f5;
   font-family: "Open Sans", sans-serif;
-  font-size: 4rem;
+  font-size: clamp(40px, 8vw, 70px);
   font-weight: 700;
 }
 
@@ -222,8 +222,10 @@ body {
   .btn__container {
     padding-left: 1rem;
     background-color: #0a132f;
+    margin-bottom: 10rem;
   }
   .hero__btn {
+    margin-top: 1rem;
     width: 100px;
   }
   .hero__btn a {
@@ -234,12 +236,11 @@ body {
     padding-left: 4rem;
   }
   .hero__container h5 {
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-bottom: 0.5rem;
     font-size: 0.7rem;
   }
   .hero__container h1 {
-    font-size: 2rem;
     padding-bottom: 0.5rem;
   }
   .hero__container h2 {
@@ -247,7 +248,7 @@ body {
   }
   .hero__container p {
     padding-top: 1rem;
-    padding-bottom: 0.5rem;
+    margin-bottom: 0;
     font-size: 0.8rem;
   }
 }
