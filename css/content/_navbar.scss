@@ -1,9 +1,10 @@
 .nav__custom {
   background-color: $bgColor;
-  height: 20vh;
+  height: 14vh;
   margin: 0;
-  // box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-  //   rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   a {
     font-family: $font-title;
     color: $textSecondary;
@@ -48,7 +49,6 @@
   cursor: pointer;
   padding: 1rem 1.5rem 4rem;
   color: $titleColor;
-  margin-top: 20%;
   height: 1rem;
   font-size: 3rem;
 }
