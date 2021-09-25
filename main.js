@@ -11,3 +11,5 @@ openMenu.addEventListener("click", ()=>{
     navContainer.style.right = 0;
     navContainer.classList.remove('close')
 })
+
+
