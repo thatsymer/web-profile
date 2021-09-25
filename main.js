@@ -13,3 +13,10 @@ openMenu.addEventListener("click", ()=>{
 })
 
 
+
+// let spinnerWrapper = document.querySelector('.load__wrapper');
+
+// window.addEventListener('load', function () {
+// spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+    
+// });
