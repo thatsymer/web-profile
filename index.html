@@ -110,7 +110,7 @@
         </defs>
       </svg>
     </div>
-    <nav class="navbar fixed-top navbar-expand-lg nav__custom">
+    <nav class="navbar fixed-top navbar-expand-lg nav__custom anim-nav">
       
       <div class="menu__toggle" id="nav-open">
         <i class="bx bx-menu-alt-right nav__menuico"></i>
@@ -421,10 +421,12 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
   <!-- GSAP3 Animations -->
-  <script>
+  <script>   
+
+
    var tl = gsap.timeline()
     tl.from('spinner-wrapper', {opacity:0, duration:4, y:100})
-    .from('.anim1', {opacity:0, duration:0.5, y:-50,x:-50, stagger:0.1,ease: "power4.out",})
+    .from('.anim-nav', {opacity:0, duration:0.25, y:-50, stagger:0.1})
     .from('.anim2', {opacity:0, duration:0.5, y:50, stagger:0.1})
     .from('.anim3', {opacity:0, duration:0.25, x:100,})
     .from('.anim4', ({opacity:0, duration:0.25,  x:-100,}),"-=.25");
