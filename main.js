@@ -13,10 +13,11 @@ openMenu.addEventListener("click", ()=>{
 })
 
 
+let spinnerWrapper = document.querySelector('.spinner-wrapper');
 
-// let spinnerWrapper = document.querySelector('.load__wrapper');
-
-// window.addEventListener('load', function () {
-// spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+window.addEventListener('load', function () {
+setTimeout(() => {
+    spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+}, 4000);
     
-// });
+});

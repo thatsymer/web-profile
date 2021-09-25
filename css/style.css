@@ -15,7 +15,7 @@ body {
 
 .nav__custom {
   background-color: #0a132f;
-  height: 14vh;
+  height: 15vh;
   margin: 0;
   z-index: 1;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -75,6 +75,9 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .svg__logo {
+    padding-bottom: 0.2rem;
+  }
   .nav__collapse {
     z-index: 5;
     display: block;
@@ -115,6 +118,7 @@ body {
   .menu__toggle {
     display: block;
     padding-top: 0.5rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -1292,36 +1296,37 @@ footer {
   }
 }
 
-.load__wrapper {
-  width: 100vh;
-  height: 100vh;
+.spinner-wrapper {
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 0;
-  left: 0;
-  position: absolute;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #0a192f;
-  z-index: 9999;
+  background-color: #0a132f;
+}
+
+.spinner-wrapper svg {
   -webkit-transform-origin: center;
           transform-origin: center;
   transform-box: fill;
-  -webkit-animation: fadeOut 3s ease forwards;
-          animation: fadeOut 3s ease forwards;
+  -webkit-animation: fadeOut 3.9s forwards linear;
+          animation: fadeOut 3.9s forwards linear;
 }
 
 #orbit {
   -webkit-transform-origin: center;
           transform-origin: center;
   transform-box: fill;
-  -webkit-animation: rotate 1.4s linear infinite;
-          animation: rotate 1.4s linear infinite;
+  -webkit-animation: rotate 1.5s linear infinite;
+          animation: rotate 1.5s linear infinite;
 }
 
 @-webkit-keyframes rotate {
