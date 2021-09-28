@@ -138,12 +138,12 @@
 
             <li class="nav-item anim1">
               <a class="nav-link" href="#projects"
-                ><span class="nav__num">02.</span>Projects</a
+                ><span class="nav__num">01.</span>Projects</a
               >
             </li>
             <li class="nav-item pe-5 anim1">
               <a class="nav-link " href="#contact"
-                ><span class="nav__num">03.</span>Contact</a
+                ><span class="nav__num">02.</span>Contact</a
               >
             </li>
           </ul>
@@ -190,10 +190,18 @@
           ></a>
         </li>
         <li>
-          <a href="https://web.facebook.com/symre.1998?"
+          <a href="https://web.facebook.com/symre.1998?" target="blank"
             ><i class="bx bxl-facebook-circle"></i
           ></a>
         </li>
+        <li>
+          <a href="https://open.spotify.com/user/12157335014?si=46153dfe72634826" target="blank"> 
+            <i class='bx bxl-spotify'></i>
+          </a>
+        </li>
+        <li><a href="https://www.instagram.com/notsymre/" target="blank">
+          <i class='bx bxl-instagram-alt' ></i>
+        </a></li>
       </ul>
     </div>
     <!-- Main Content -->
@@ -203,11 +211,7 @@
           <h2 class="anim2">I'm an aspiring Web Developer and</h2>
           <h2 class="anim2"> Programmer.</h2>
           <p class="anim2">
-            I started my journey as a <span>Web Developer</span> right out of
-            college.
-            <br />
-            Currently spending most of my days polishing my craft to the next
-            level by building personal projects and learning new technologies.
+            Currently exploring opportunities and polishing my skills in web development.
           </p>
         </div>
 
@@ -228,7 +232,7 @@
                   I have recently graduated from college with a degree in Computer Engineering from Western Institute of Technology - Iloilo.
                 </p>
 
-                <p>I enjoy surfing the web, playing games, reading translated web novels or manga online,
+                <p>I enjoy surfing the web, playing games, listening to music, reading translated web novels or manga online,
                   and lately been engrossed in building web pages/applications or learning new technologies.
                 </p>
                 
@@ -247,9 +251,8 @@
                 <ul class="skill__list ">
                   <li>HTML/CSS</li>
                   <li>Javascript</li>
-                  <li>Python</li>
-                  <li>GIT</li>
-                  <li>Scss/Sass/Bootstrap</li>
+                  <li>Bootstrap</li></li>
+                  <li>Scss/Sass</li>
                   
                 </ul>
               </div>
@@ -407,31 +410,32 @@
             
           </div>
         </section>
- 
-    <!-- Footer -->
-    <footer></footer>
+
+
 
     <script src="/main.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-      crossorigin="anonymous"
-    ></script>
 
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-  <!-- GSAP3 Animations -->
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"
+  ></script>
+  <!-- GSAP3 Reveal Animation -->
   <script>   
 
 
    var tl = gsap.timeline()
     tl.from('spinner-wrapper', {opacity:0, duration:4, y:100})
-    .from('.anim-nav', {opacity:0, duration:0.25, y:-50, stagger:0.1})
-    .from('.anim2', {opacity:0, duration:0.5, y:50, stagger:0.1})
+    .from('.anim-nav', {opacity:0, duration:0.1, y:-50})
+    .from('.anim1', {opacity:0, duration:0.25, y:-50, stagger:0.1})
+    .from('.anim2', {opacity:0, duration:0.5, y:50, stagger:0.2})
     .from('.anim3', {opacity:0, duration:0.25, x:100,})
     .from('.anim4', ({opacity:0, duration:0.25,  x:-100,}),"-=.25");
   </script>
-
+<!-- GSAP3 Scroll Animation -->
   <script>
   const showAnim = gsap.from('nav', { 
     yPercent: -100,

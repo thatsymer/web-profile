@@ -228,7 +228,7 @@ body {
   }
   .hero__btn {
     margin-top: 1rem;
-    width: 200px;
+    width: 250px;
   }
   .hero__btn a {
     font-size: 1.2rem;
@@ -238,9 +238,9 @@ body {
     padding-left: 2rem;
   }
   .hero__container h5 {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     padding-bottom: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   .hero__container h1 {
     padding-bottom: 0.5rem;
@@ -251,7 +251,7 @@ body {
   .hero__container p {
     padding-top: 1rem;
     margin-bottom: 0;
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -424,7 +424,7 @@ body {
   .about__content p,
   .about__content em,
   .about__content ul {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
   .skill__list li::before {
     line-height: 20px;
@@ -1148,7 +1148,7 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .project__top {
@@ -1300,6 +1300,7 @@ footer {
   z-index: 99;
   width: 100%;
   height: 100%;
+  padding-bottom: 13%;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
